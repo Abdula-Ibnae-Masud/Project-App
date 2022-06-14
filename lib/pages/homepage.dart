@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_dart_flutter/loginPage/sign_in_page.dart';
+import 'package:getx_dart_flutter/SigninPage/sign_in_page.dart';
 import 'package:getx_dart_flutter/pages/report_page.dart';
 import 'package:getx_dart_flutter/widgets/input_button.dart';
 

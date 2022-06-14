@@ -1,7 +1,8 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_dart_flutter/loginPage/login.dart';
+import 'package:getx_dart_flutter/widgets/bottom_widget.dart';
+import 'package:getx_dart_flutter/widgets/language.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,6 +15,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      translations: LocalString(),
+      locale: const Locale("bn", "BN"),
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -38,7 +41,7 @@ class MyApp extends StatelessWidget {
         duration: 3000,
         splashTransition: SplashTransition.scaleTransition,
         backgroundColor: Colors.blue,
-        nextScreen: const LoginPageWidget(),
+        nextScreen: const BottomWidget(),
       ),
     );
   }

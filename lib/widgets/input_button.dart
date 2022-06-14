@@ -26,22 +26,26 @@ class InputButton extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Card(
+        shadowColor: Colors.amberAccent,
+        elevation: 8,
+        color: backgroundColor,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(5),
+          borderRadius: BorderRadius.circular(15),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             image != null
                 ? Image(
                     image: image!,
-                    height: 70,
+                    height: 50,
                   )
                 : Container(),
             text != null
                 ? Text(
                     text!,
-                    style: const TextStyle(fontSize: 14, color: Colors.black),
+                    style: const TextStyle(fontSize: 12, color: Colors.black),
                   )
                 : Container(),
           ],
